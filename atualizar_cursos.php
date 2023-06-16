@@ -1,4 +1,5 @@
 <?php
+//teste
 include_once("Banco.php");
 $con = Banco::conectar();
 
