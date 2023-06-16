@@ -1,5 +1,6 @@
 <?php
-//teste
+//teste 
+//nova alteração de teste
 include_once("Banco.php");
 $con = Banco::conectar();
 
