@@ -1,6 +1,4 @@
 <?php
-//teste 
-//nova alteração de teste
 include_once("Banco.php");
 $con = Banco::conectar();
 
@@ -16,14 +14,6 @@ if ($_POST) {
 $PDOStatement = $con->query("SELECT * FROM cursos WHERE id= '$id'");
 $dadosCurso = $PDOStatement->fetchObject();
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<?php include_once("header.php") ?>
-<title>Atualizar</title>
-
-<body>
-    <?php include_once("navbar.php") ?>
     <div>
         <h2>Atualizar Curso</h2>
         <form class="form-horizontal" method="POST">
@@ -43,7 +33,7 @@ $dadosCurso = $PDOStatement->fetchObject();
             <div class="control-group">
                 <div class="controls">
 
-                    <a href="" class="btn">Voltar</a>
+                    <a href="index.php?page=curso" class="btn">Voltar</a>
                     <button type="submit" class="btn">Atualizar</button>
                 </div>
             </div>

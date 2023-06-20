@@ -3,7 +3,7 @@
 
         <div class="modal-content">
 
-            <form action="index_cursos.php" method="POST">
+            <form action="?page=curso" method="POST">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">Excluir curso</h4>
@@ -14,7 +14,7 @@
                     <input type="hidden" name="acao" value="deletar">
                 </div>
                 <div class="modal-footer">
-                    <a href="index_curso.php" class="btn btn-default" data-dismiss="modal">Cancelar</a>
+                    <a href="?page=curso" class="btn btn-default" data-dismiss="modal">Cancelar</a>
                     <button type="submit" class="btn btn-danger">Excluir</button>
                 </div>
             </form>

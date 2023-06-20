@@ -1,10 +1,10 @@
 <div class="navbar">
         <div class="navbar-inner">
-            <a class="brand" href="#">SISMARIA</a>
+            <a class="brand" href="index.php">SISMARIA</a>
             <ul class="nav">
-                <li class=""><a href="index.php">Efetivo</a></li>
-                <li class=""><a href="tabela_setor.php">Setor</a></li>
-                <li><a href="index_cursos.php">Cursos</a></li>
+                <li class=""><a href="?page=efetivo">Efetivo</a></li>
+                <li class=""><a href="?page=setor">Setor</a></li>
+                <li><a href="?page=curso">Cursos</a></li>
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown">Outros
                         <b class="caret"></b>

@@ -1,13 +1,7 @@
 <?php
-include("Banco.php");
+include_once("Banco.php");
 $con = Banco::conectar();
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<?php include_once("header.php") ?>
-<title>Cadastrar</title>
-<body>
-    <?php include_once("navbar.php") ?>
     <div>
 
 <h2>Cadastrar Setor</h2>
@@ -27,8 +21,9 @@ $con = Banco::conectar();
         </div>
         <div class="control-group">
             <div class="controls">
+            <a href="?page=setor" class="btn">Voltar</a>
                 <button type="submit" class="btn">Cadastrar</button>
-                <a href="tabela_setor.php" class="btn">Voltar</a>
+
             </div>
         </div>
     </form>
@@ -37,6 +32,25 @@ if ($_POST) {
     $nomeSetor = $_POST["nomeSetor"];
     $siglaSetor = $_POST["siglaSetor"];
 
+    $erros = [];
+
+    if (strlen($nomeSetor) < 2) {
+        $erros[] = "Nome inválido";
+    }
+
+    if (strlen($siglaSetor) < 1) {
+        $erros[] = "Sigla inválida";
+    }
+if (count($erros) == 0) {
     $con->exec("INSERT INTO setor (nome_setor, sigla_setor) VALUES ('$nomeSetor', '$siglaSetor')");
+    echo '<div class="alert alert-success"><strong>Setor cadastrado com sucesso</strong></div>';
+}
+else {
+    echo "<ul class='alert alert-danger' >";
+    foreach ($erros as $erro) :
+        echo "<li>$erro</li>";
+    endforeach;
+    echo "</ul>";
+}
 }
 ?>

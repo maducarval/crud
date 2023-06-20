@@ -19,14 +19,6 @@ if ($_POST) {
 $PDOStatement = $con->query("SELECT * FROM setor WHERE id= '$id'");
 $dadosSetor = $PDOStatement->fetchObject();
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<?php include_once("header.php") ?>
-<title>Atualizar</title>
-
-<body>
-    <?php include_once("navbar.php") ?>
     <div>
         <h2>Atualizar Setor</h2>
         <form class="form-horizontal" method="POST">
@@ -46,7 +38,7 @@ $dadosSetor = $PDOStatement->fetchObject();
             <div class="control-group">
                 <div class="controls">
 
-                    <a href="tabela_setor.php" class="btn">Voltar</a>
+                    <a href="?page=setor" class="btn">Voltar</a>
                     <button type="submit" class="btn">Atualizar</button>
                 </div>
             </div>

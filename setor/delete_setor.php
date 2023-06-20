@@ -2,7 +2,7 @@
   <div class="modal-dialog">
 
     <div class="modal-content">
-      <form action="tabela_setor.php" method="POST">
+      <form action="?page=setor" method="POST">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <h4 class="modal-title">Excluir Setor</h4>
@@ -13,7 +13,7 @@
           <input type="hidden" name="acao" value="deletar">
         </div>
         <div class="modal-footer">
-          <a href="tabela_setor.php" class="btn btn-default" data-dismiss="modal">Cancelar</a>
+          <a href="?page=setor" class="btn btn-default" data-dismiss="modal">Cancelar</a>
           <button type="submit" class="btn btn-danger">Excluir</button>
         </div>
       </form>

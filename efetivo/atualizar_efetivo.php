@@ -1,5 +1,5 @@
 <?php
-include("Banco.php");
+include_once("Banco.php");
 $con = Banco::conectar();
 
 $id = $_GET["id"];
@@ -42,15 +42,6 @@ $cursosMilitar = $con->query("SELECT curso_id FROM efetivo_cursos WHERE efetivo_
 
 
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<?php include_once("header.php") ?>
-<title>Atualizar</title>
-
-<body>
-
-    <?php include_once("navbar.php") ?>
     <div>
         <h2>Atualizar</h2>
         <form class="form-horizontal" method="POST">
@@ -132,7 +123,7 @@ $cursosMilitar = $con->query("SELECT curso_id FROM efetivo_cursos WHERE efetivo_
             </div>
             <div class="control-group">
                 <div class="controls">
-                    <a href="index.php" class="btn">Voltar</a>
+                    <a href="?page=efetivo" class="btn">Voltar</a>
                     <button type="submit" class="btn">Atualizar</button>
 
                 </div>
