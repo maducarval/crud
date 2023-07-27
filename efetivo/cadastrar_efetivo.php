@@ -6,7 +6,7 @@ $cursos = $con->query("SELECT * FROM cursos")->FetchAll(5);
 
 ?>
 <div>
-    <h2>Cadastramento</h2>
+    <h2 class="form-horizontal">Cadastramento</h2>
     <form class="form-horizontal" method="POST">
         <div class="control-group">
             <label class="control-label" for="inputEmail">Nome completo:</label>

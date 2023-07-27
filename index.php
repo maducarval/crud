@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <?php $page = isset($_GET["page"]) ? $_GET["page"] : "efetivo"; ?>
 <?php include_once("header.php") ?>
 

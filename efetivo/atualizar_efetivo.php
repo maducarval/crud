@@ -43,7 +43,7 @@ $cursosMilitar = $con->query("SELECT curso_id FROM efetivo_cursos WHERE efetivo_
 
 ?>
     <div>
-        <h2>Atualizar</h2>
+        <h2 class="form-horizontal">Atualizar</h2>
         <form class="form-horizontal" method="POST">
             <div class="control-group">
                 <label class="control-label" for="inputEmail">Nome completo:</label>

@@ -20,7 +20,7 @@ $PDOStatement = $con->query("SELECT * FROM setor WHERE id= '$id'");
 $dadosSetor = $PDOStatement->fetchObject();
 ?>
     <div>
-        <h2>Atualizar Setor</h2>
+        <h2 class="form-horizontal">Atualizar Setor</h2>
         <form class="form-horizontal" method="POST">
             <div class="control-group">
                 <label class="control-label" for="inputSetro">Nome setor:</label>

@@ -12,6 +12,7 @@ $cursos = $con->query("SELECT * FROM cursos")->FetchAll(5);
 
 <div class="container-fluid">
         <a class="btn btn-success pull-right" href="?page=cadastrar_curso">Novo Registro</a>
+        <br><br>
         <table class="table table-bordered">
             <thead>
                 <tr>

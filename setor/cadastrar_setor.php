@@ -4,7 +4,7 @@ $con = Banco::conectar();
 ?>
     <div>
 
-<h2>Cadastrar Setor</h2>
+<h2 class="form-horizontal">Cadastrar Setor</h2>
     <form class="form-horizontal" method="POST">
         <div class="control-group">
             <label class="control-label" for="inputSetro">Nome setor:</label>

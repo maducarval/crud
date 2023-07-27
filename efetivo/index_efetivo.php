@@ -32,7 +32,8 @@ foreach ($efetivo as $militar) :
 endforeach;
 ?>
 <div class="container-fluid">
-    <a class="btn btn-success pull-right" href="?page=cadastrar_efetivo">Novo Registro</a>
+    <a class="btn btn-create pull-right" href="?page=cadastrar_efetivo">Novo Registro</a>
+    <br><br>
     <table class="table table-bordered">
         <thead>
             <tr>
@@ -62,8 +63,8 @@ endforeach;
                     <td><?php echo $militar->sigla_setor ?></td>
                     <td><?php echo implode(" | ", $militar->cursos) ?></td>
                     <td>
-                        <a class="btn" href="?page=atualizar_efetivo&id=<?php echo $militar->id ?>">Editar</a>
-                        <a href="" class="btn btn-danger btnDelete" data-id="<?php echo $militar->id ?>" data-toggle="modal" data-target="#modalDelete">Excluir</a>
+                        <a class="btn btn-edit" href="?page=atualizar_efetivo&id=<?php echo $militar->id ?>">Editar</a>
+                        <a href="" class=" btn btn-delete btnDelete" data-id="<?php echo $militar->id ?>" data-toggle="modal" data-target="#modalDelete">Excluir</a>
 
                     </td>
                 </tr>

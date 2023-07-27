@@ -2,7 +2,7 @@
   <div class="modal-dialog">
 
     <div class="modal-content">
-      <form action="?page=efetivo" method="POST">
+      <form action="?page=efetivos" method="POST">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
         <h4 class="modal-title">Excluir usuário</h4>

@@ -10,6 +10,7 @@ $setores = $con->query("SELECT * FROM setor")->FetchAll(5);
 ?>
     <div class="container-fluid">
         <a class="btn btn-success pull-right" href="?page=cadastrar_setor">Novo Registro</a>
+        <br><br>
         <table class="table table-bordered">
             <thead>
                 <tr>

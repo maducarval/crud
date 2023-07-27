@@ -15,7 +15,7 @@ $PDOStatement = $con->query("SELECT * FROM cursos WHERE id= '$id'");
 $dadosCurso = $PDOStatement->fetchObject();
 ?>
     <div>
-        <h2>Atualizar Curso</h2>
+        <h2 class="form-horizontal">Atualizar Curso</h2>
         <form class="form-horizontal" method="POST">
             <div class="control-group">
                 <label class="control-label" for="inputNome">Nome Curso:</label>

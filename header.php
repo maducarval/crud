@@ -6,47 +6,70 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <title><?php echo $page ?></title>
-    
+
     <style>
+        :root {
+            --fundo: #F2F2F2;
+            --cor_texto: #579BB1;
+            --cor_texto_escuro: #3A778A;
+            --azul-gradiente: linear-gradient(to bottom, #86c7db, #c6d0d2);
+        }
+
+        body {
+            display: block;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--fundo);
+            color: var(--cor_texto);
+        }
+
         .btn-primary {
-            color: yellow;
-            background-color: aqua;
+            color: var(--cor_texto);
+            background-color: var(--fundo);
         }
 
         .navbar-inner {
-            background-image: linear-gradient(to bottom, #b0e1ee, #33a8f1);
+            background-image: var(--azul-gradiente);
         }
 
         .navbar .nav>li>a {
             color: #000000;
-            text-shadow: 0 1px 0 #3c00ff;
+            text-shadow: 0 1px 0 var(--cor_texto);
         }
 
-        section.form-section {
-            padding: 60px;
-            background: #e7e7e7;
+        .navbar .brand {
+            color: var(--cor_texto);
         }
 
-        form.form {
-            width: 50%;
-            background: #fff;
-            margin: 0 auto;
-            padding: 30px;
-            font-size: 1em;
-            font-weight: bold;
-            border: 1px solid #cec9c9;
+        .navbar .brand:hover,
+        .navbar .brand:focus {
+            text-decoration: none;
+            color: var(--cor_texto_escuro);
         }
 
-        section.form-section h1 label {
+        .container-fluid {
             text-align: center;
-            margin-bottom: 50px;
+            margin: 0 50px;
         }
 
-        div#header {
-            background: #000;
-            padding: 10px;
-            color: #fff;
-            font-weight: bold;
+        .form-horizontal,
+        .control-label {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .btn-create,
+        .btn-delete,
+        .btn-edit {
+            color: var(--cor_texto_escuro);
+            text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+            background-color: var(--fundo);
+            background-image: var(--azul-gradiente);
+            text-shadow: 0 -1px 0 rgba(112, 220, 232, 0.92);
         }
     </style>
 </head>

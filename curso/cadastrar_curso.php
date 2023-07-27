@@ -4,7 +4,7 @@ $con = Banco::conectar();
 ?>
 <div>
 
-    <h2>Cadastrar Curso</h2>
+    <h2 class="form-horizontal">Cadastrar Curso</h2>
     <form class="form-horizontal" method="POST">
         <div class="control-group">
             <label class="control-label" for="inputNome">Nome curso:</label>
