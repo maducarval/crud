@@ -9,7 +9,7 @@ if (isset($_POST["id"]) && isset($_POST["acao"]) && $_POST['acao'] == "deletar")
 $setores = $con->query("SELECT * FROM setor")->FetchAll(5);
 ?>
     <div class="container-fluid">
-        <a class="btn btn-success pull-right" href="?page=cadastrar_setor">Novo Registro</a>
+        <a class="btn btn-create pull-right" href="?page=cadastrar_setor">Novo Registro</a>
         <br><br>
         <table class="table table-bordered">
             <thead>
@@ -27,8 +27,8 @@ $setores = $con->query("SELECT * FROM setor")->FetchAll(5);
                         <td><?php echo $setor->nome_setor ?></td>
                         <td><?php echo $setor->sigla_setor ?></td>
                         <td>
-                            <a class="btn" href="?page=atualizar_setor&id=<?php echo $setor->id ?>">Editar</a>
-                            <a href="" class="btn btn-danger btnDelete_setor" data-id="<?php echo $setor->id ?>" data-toggle="modal" data-target="#modalDelete">Excluir</a>
+                            <a class="btn btn-edit" href="?page=atualizar_setor&id=<?php echo $setor->id ?>">Editar</a>
+                            <a href="" class="btn btn-delete btnDelete_setor" data-id="<?php echo $setor->id ?>" data-toggle="modal" data-target="#modalDelete">Excluir</a>
                         </td>
                     </tr>
                 <?php endforeach ?>

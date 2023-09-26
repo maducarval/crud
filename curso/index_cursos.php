@@ -11,7 +11,7 @@ $cursos = $con->query("SELECT * FROM cursos")->FetchAll(5);
 ?>
 
 <div class="container-fluid">
-        <a class="btn btn-success pull-right" href="?page=cadastrar_curso">Novo Registro</a>
+        <a class="btn btn-create pull-right" href="?page=cadastrar_curso">Novo Registro</a>
         <br><br>
         <table class="table table-bordered">
             <thead>
@@ -30,8 +30,8 @@ $cursos = $con->query("SELECT * FROM cursos")->FetchAll(5);
                         <td><?php echo $curso->nome_curso ?></td>
                         <td><?php echo $curso->sigla_curso ?></td>
                         <td>
-                            <a class="btn" href="?page=atualizar_curso&id=<?php echo $curso->id ?>">Editar</a>
-                            <a href="" class="btn btn-danger btnDelete_curso" data-id="<?php echo $curso->id ?>" data-toggle="modal" data-target="#modalDelete">Excluir</a>
+                            <a class="btn btn-edit" href="?page=atualizar_curso&id=<?php echo $curso->id ?>">Editar</a>
+                            <a href="" class="btn btn-delete btnDelete_curso" data-id="<?php echo $curso->id ?>" data-toggle="modal" data-target="#modalDelete">Excluir</a>
 
 
                         </td>
