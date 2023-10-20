@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 28/09/2023 às 20:14
+-- Tempo de geração: 20/10/2023 às 13:31
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.0.28
 
@@ -57,7 +57,7 @@ CREATE TABLE `militares` (
 --
 
 CREATE TABLE `militares_cursos` (
-  `efetivo_id` int(11) NOT NULL,
+  `militar_id` int(11) NOT NULL,
   `curso_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
@@ -94,7 +94,7 @@ ALTER TABLE `militares`
 -- Índices de tabela `militares_cursos`
 --
 ALTER TABLE `militares_cursos`
-  ADD PRIMARY KEY (`efetivo_id`,`curso_id`);
+  ADD PRIMARY KEY (`militar_id`,`curso_id`);
 
 --
 -- Índices de tabela `setor`
