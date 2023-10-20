@@ -7,13 +7,14 @@ if (isset($_POST["id"]) && isset($_POST["acao"]) && $_POST['acao'] == "deletar")
 }
 
 
-$efetivo = $con->query("SELECT efetivo.* , setor.nome_setor,  setor.sigla_setor FROM `efetivo` LEFT JOIN setor ON efetivo.setor_id = setor.id;")->FetchAll(5);
+$efetivo = $con->query("SELECT militares.* , setor.nome_setor,  setor.sigla_setor FROM `militares` LEFT JOIN setor ON militares.setor_id = setor.id;")->FetchAll(5);
 
-$cursos = $con->query("SELECT efetivo_cursos.*, cursos.sigla_curso FROM `efetivo_cursos` INNER JOIN cursos ON cursos.id=efetivo_cursos.curso_id INNER JOIN efetivo ON efetivo.id=efetivo_cursos.efetivo_id;")->FetchAll(5);
+$cursos = $con->query("SELECT militares_cursos.*, cursos.sigla_curso FROM `militares_cursos` INNER JOIN cursos ON cursos.id=efetivo_cursos.curso_id INNER JOIN efetivo ON efetivo.id=efetivo_cursos.efetivo_id;")->FetchAll(5);
 
 foreach ($efetivo as $militar) {
     $militar->cursos = [];
 }
+
 
 $x = [];
 $x[] = 3;
