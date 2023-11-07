@@ -1,6 +1,6 @@
 
 <div class="container-fluid">
-    <a class="btn btn-create pull-right" href="<?php echo BASE_URL?>index.php/militar/create">Novo Registro</a>
+    <a class="btn btn-create pull-right btn btn-success" href="<?php echo BASE_URL?>index.php/militar/create">Novo Registro</a>
     <br><br>
     <table class="table table-bordered">
         <thead>
@@ -32,7 +32,7 @@
                     <td><?php echo MilitarModel::cursosToString($militar->cursos)?> </td>
                     <td>
                         <a class="btn btn-edit" href="<?php echo BASE_URL . 'index.php/militar/edit/' . $militar->id ?>">Editar</a>
-                        <a href="<?php echo BASE_URL . "index.php/militar/delete/" . $militar->id ?>" class="btn btn-delete btnDelete_militar">Excluir</a>
+                        <a href="<?php echo BASE_URL . "index.php/militar/delete/" . $militar->id ?>" class="btn btn-delete btnDelete_militar btn-danger">Excluir</a>
                 </td>
             </tr>
         <?php endforeach ?>

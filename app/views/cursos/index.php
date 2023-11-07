@@ -1,5 +1,5 @@
 <div class="container-fluid">
-<a class="btn btn-create pull-right" href="<?php echo BASE_URL ?>index.php/curso/create">Novo Registro</a>
+<a class="btn btn btn-success pull-right" href="<?php echo BASE_URL ?>index.php/curso/create">Novo Registro</a>
 <table class="table table-bordered">
     <thead>
         <tr>
@@ -17,7 +17,7 @@
                 <td><?php echo $curso->sigla_curso ?></td>
                 <td>
                     <a class="btn btn-edit" href="<?php echo BASE_URL . 'index.php/curso/edit/' . $curso->id ?>">Editar</a>
-                    <a href="<?php echo BASE_URL . 'index.php/curso/delete/' . $curso->id ?>" class="btn btn-delete btnDelete_curso">
+                    <a href="<?php echo BASE_URL . 'index.php/curso/delete/' . $curso->id ?>" class="btn btn-danger btn-delete btnDelete_curso">
                         Excluir
                     </a>
                 </td>

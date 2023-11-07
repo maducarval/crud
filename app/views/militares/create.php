@@ -88,7 +88,7 @@
         <div class="control-group">
             <div class="controls">
                 <a href="<?php echo BASE_URL?>index.php/militar" class="btn">Voltar</a>
-                <button type="submit" class="btn">Salvar</button>
+                <button type="submit" class="btn btn btn-success">Salvar</button>
 
             </div>
         </div>

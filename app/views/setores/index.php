@@ -1,5 +1,5 @@
 <div class="container-fluid">
-<a class="btn btn-create pull-right" href="<?php echo BASE_URL . "index.php/setor/create" ?>">Novo Registro</a>
+<a class="btn btn-create pull-right btn btn-success" href="<?php echo BASE_URL . "index.php/setor/create" ?>">Novo Registro</a>
 <br><br>
 <table class="table table-bordered">
     <thead>
@@ -18,7 +18,7 @@
                 <td><?php echo $setor->sigla_setor ?></td>
                 <td>
                     <a class="btn btn-edit" href="<?php echo BASE_URL . 'index.php/setor/edit/' . $setor->id ?>">Editar</a>
-                    <a href="<?php echo BASE_URL . "index.php/setor/delete/" . $setor->id ?>" class="btn btn-delete btnDelete_setor">Excluir</a>
+                    <a href="<?php echo BASE_URL . "index.php/setor/delete/" . $setor->id ?>" class="btn btn-delete btnDelete_setor btn-danger">Excluir</a>
                 </td>
             </tr>
         <?php endforeach ?>
