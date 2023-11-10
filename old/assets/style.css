@@ -16,6 +16,11 @@ body {
     color: var(--cor_texto);
 }
 
+.btn-primary {
+    color: var(--cor_texto);
+    background-color: var(--fundo);
+}
+
 .navbar-inner {
     background-image: var(--azul-gradiente);
 }
@@ -47,3 +52,12 @@ body {
     align-items: center;
 }
 
+.btn-create,
+.btn-delete,
+.btn-edit {
+    color: var(--cor_texto_escuro);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color: var(--fundo);
+    background-image: var(--azul-gradiente);
+    text-shadow: 0 -1px 0 rgba(112, 220, 232, 0.92);
+}
